@@ -277,7 +277,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14 grid md:grid-cols-3 gap-10">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="" className="h-14 w-14 rounded-full" />
+            <img src={logoAsset} alt="Khushiii Foundation logo" className="h-14 w-14 rounded-full object-cover" />
             <div>
               <div className="font-bold text-xl text-primary" style={{ fontFamily: "Dancing Script, cursive" }}>Khushiii Foundation</div>
               <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">Educate • Nourish • Empower</div>
@@ -308,8 +308,12 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-border/60">
-        <div className="mx-auto max-w-7xl px-6 py-5 flex flex-wrap items-center justify-between text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} Khushiii Foundation. All rights reserved.</div>
+        <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between text-xs text-muted-foreground">
+          <div className="space-y-1">
+            <div>© 2026 Khushiii Foundation. All rights reserved.</div>
+            <div>You dream it. I’ll make it happen.</div>
+            <div>I Love You. ❤️</div>
+          </div>
           <Link to="/message" className="inline-flex items-center gap-1.5 hover:text-primary transition">
             Made with <span className="text-primary">❤</span>
           </Link>
